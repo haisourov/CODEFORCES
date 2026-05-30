@@ -25,7 +25,7 @@ vector<int> split(string text, char delimiter){
     string s = "";
     rep(i, 0, len){
         if (text[i] == delimiter){
-            if(!s.empty()) { // Safeguard against multiple spaces
+            if(!s.empty()) { 
                 vec.pb(stoi(s));
                 s = "";
             }
