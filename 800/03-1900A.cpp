@@ -12,13 +12,13 @@ int main(){
     cin >> n;
     string s;
     cin >> s;
-    vector<int> x(n, 0);
+    vector<int> x(n+1,0);
     int j = 0;
     while(n--){
       if (s[n] == '.'){
         x[j]++;
       }
-      else{
+      else if (s[n] == '#'){
         j++;
       }
     }
